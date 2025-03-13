@@ -3,10 +3,60 @@ import Layout from "../layouts/Layout.astro";
 import Components from "../components/Welcome.astro";
 import Artists from "../components/Artists.astro";
 import Albums from "../components/Albums.astro";
+import Action from "../components/Action.astro";
+import Footer from "../components/Footer.astro";
+const logoSrc = "/spotify-logo.svg";
+const homeIcon = "/home-icon.svg";
+const deviceIcon = "/device-icon.svg";
 ---
 
 <Layout>
+  <header>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <img src={logoSrc} alt="Spotify Logo" class="logo" />
+        <img src={homeIcon} alt="Home" class="icon home-icon" />
+        <div class="search-bar">
+          <input type="text" placeholder="What do you want to play?" />
+          <img src={deviceIcon} alt="Device" class="icon device-icon" />
+        </div>
+      </div>
+
+      <div class="navbar-right">
+        <a href="#">Premium</a>
+        <a href="#">Support</a>
+        <a href="#">Download</a>
+        <div class="divider"></div>
+        <a href="#">Install App</a>
+        <a href="#">Sign up</a>
+        <button class="login-btn">Log in</button>
+      </div>
+    </nav>
+  </header>
   <main>
+    <section class="info_galleri">
+      <h1>Your Library</h1>
+      <Action
+        overskrift="Create your first playlist"
+        text="It's easy, we'll help you"
+        button="Create playlist"
+      />
+      <Action
+        overskrift="Let's find some podcasts to follow"
+        text="We'll keep you updated on new episodes"
+        button="Browse podcasts"
+      />
+
+      <article class="footer">
+        <h4>Legal</h4>
+        <h4>Safety & Privacy Center</h4>
+        <h4>Privacy Policy</h4>
+        <h4>Cookie Settings</h4>
+        <h4>About Ads</h4>
+        <h4>Accessibility</h4>
+        <button>English</button>
+      </article>
+    </section>
     <section class="img_galleri">
       <h1>Popular Artists</h1>
       <section class="popular_artists">
