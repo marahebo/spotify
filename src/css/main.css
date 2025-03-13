@@ -1,0 +1,9 @@
+.popular_artists,
+.popular_albums {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+img {
+  max-width: 100%;
+}
