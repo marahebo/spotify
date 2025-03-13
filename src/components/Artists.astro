@@ -3,9 +3,21 @@ const { img, navn } = Astro.props;
 ---
 
 <article class="artists">
-  <img src={img} alt="" />
+  <img class="artist-img" src={img} alt="" />
   <h2>{navn}</h2>
   <h3>Artist</h3>
 </article>
 
-<style></style>
+<style>
+  .artist-img {
+    border-radius: 50%;
+  }
+
+  .artists {
+    padding-inline: 20px;
+  }
+  .artists:hover {
+    background-color: #1f1e1f;
+    border-radius: 12px;
+  }
+</style>

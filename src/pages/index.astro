@@ -4,7 +4,6 @@ import Components from "../components/Welcome.astro";
 import Artists from "../components/Artists.astro";
 import Albums from "../components/Albums.astro";
 import Action from "../components/Action.astro";
-import Footer from "../components/Footer.astro";
 const logoSrc = "/spotify-logo.svg";
 const homeIcon = "/home-icon.svg";
 const deviceIcon = "/device-icon.svg";
@@ -35,7 +34,7 @@ const deviceIcon = "/device-icon.svg";
   </header>
   <main>
     <section class="info_galleri">
-      <h1>Your Library</h1>
+      <h1 class="overskrift">Your Library</h1>
       <Action
         overskrift="Create your first playlist"
         text="It's easy, we'll help you"
@@ -54,6 +53,7 @@ const deviceIcon = "/device-icon.svg";
         <h4>Cookie Settings</h4>
         <h4>About Ads</h4>
         <h4>Accessibility</h4>
+        <h3>Cookies</h3>
         <button>English</button>
       </article>
     </section>

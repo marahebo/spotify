@@ -2,10 +2,17 @@
 const { overskrift, text, button } = Astro.props;
 ---
 
-<article>
+<article class="info">
   <h2>{overskrift}</h2>
   <h3>{text}</h3>
   <button>{button}</button>
 </article>
+<br />
 
-<style></style>
+<style>
+  .info {
+    background-color: #1f1f1f;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+</style>
